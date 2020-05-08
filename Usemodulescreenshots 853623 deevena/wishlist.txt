@@ -1,0 +1,43 @@
+> db.createCollection('wishlist)
+2020-05-07T03:52:13.072-1200 E  QUERY    [js] uncaught exception: SyntaxError: '' literal not terminated before end of script :
+@(shell):1:30
+> use wishlist
+switched to db wishlist
+> db.createCollection('wishlist')
+{
+        "ok" : 0,
+        "errmsg" : "a collection 'wishlist.wishlist' already exists",
+        "code" : 48,
+        "codeName" : "NamespaceExists"
+}
+> db.wishlist.find()
+> db.wishlist.insertOne({id:'5a20',name:'MongoDB',numberInStock:'1',pricdb.wishlist.insertOne({id:'5a20',name:'MongoDB',numberInStock:'1',price:'3000'})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5eb430500efa11e376f4bde1")
+}
+> db.wishlist.insertOne({id:'5C15',name:'Full stack Developer',numberInStock:'4',price:'1000'})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5eb432110efa11e376f4bde2")
+}
+> db.wishlist.insertOne({id:'5a16',name:'Rectjs',numberInStock:'5',price:'5000'})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5eb4325e0efa11e376f4bde3")
+}
+> db.wishlist.insertOne({id:'5117',name:'NodeJs',numberInStock:'3',price:'4000'})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5eb432a90efa11e376f4bde4")
+}
+> db.wishlist.insertOne({id:'6c18',name:'Modern JavaScript',numberInStock:'6',price:'3500'})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5eb4335f0efa11e376f4bde5")
+}
+> db.wishlist.insertOne({id:'5d19',name:'Modern HTML,CSS,RWD',numberInStock:'2',price:'4000'})
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5eb4395a0efa11e376f4bde6")
+}
